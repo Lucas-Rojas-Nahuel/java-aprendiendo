@@ -15,11 +15,11 @@ public class FactorialDeUnNumero {
         
         int factorial=1;
         
-        for (int i = numero ; i<1; i--){
+        for (int i = numero ; i>1; i--){
             if(i==numero){
-                factorial= i * (i-1);
+                factorial= i*(i-1);
             }else{
-                factorial= factorial*(i-1);
+                factorial= factorial * (i-1);
             }
         }
        
