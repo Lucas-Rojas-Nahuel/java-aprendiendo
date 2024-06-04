@@ -7,6 +7,10 @@ import ejer.pkg1.desafio.navideño.Controladora;
 public class Principal extends javax.swing.JFrame {
 
     Controladora control=new Controladora();
+    String emoji;
+    String matriz[][]=new String [4][4];
+    int cantEncontrados; 
+    
     
     public Principal() {
         initComponents();
@@ -27,9 +31,9 @@ public class Principal extends javax.swing.JFrame {
         btnRegalo = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtLugarMatriz = new javax.swing.JTextArea();
-        txtRespuesta = new javax.swing.JTextField();
+        txtResultado = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        txtVecesAparecidos = new javax.swing.JTextField();
+        txtEncontrados = new javax.swing.JTextField();
         btnReiniciar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -70,16 +74,16 @@ public class Principal extends javax.swing.JFrame {
         txtLugarMatriz.setRows(5);
         jScrollPane1.setViewportView(txtLugarMatriz);
 
-        txtRespuesta.setEditable(false);
-        txtRespuesta.addActionListener(new java.awt.event.ActionListener() {
+        txtResultado.setEditable(false);
+        txtResultado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtRespuestaActionPerformed(evt);
+                txtResultadoActionPerformed(evt);
             }
         });
 
         jLabel3.setText("Veces en lo que aparecio: ");
 
-        txtVecesAparecidos.setEditable(false);
+        txtEncontrados.setEditable(false);
 
         btnReiniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ejer/pkg1/desafio/navideño/imagenes/reiniciar.png"))); // NOI18N
         btnReiniciar.setText("Reiniciar");
@@ -119,12 +123,12 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 497, Short.MAX_VALUE)
-                    .addComponent(txtRespuesta))
+                    .addComponent(txtResultado))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtVecesAparecidos))
+                        .addComponent(txtEncontrados))
                     .addComponent(btnReiniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(54, 54, 54))
         );
@@ -137,22 +141,23 @@ public class Principal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSanta)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnEstrella)
-                    .addComponent(btnRegalo)
-                    .addComponent(btnArbol))
+                    .addComponent(btnArbol)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnSanta)
+                        .addComponent(btnRegalo)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtVecesAparecidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtEncontrados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnReiniciar)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(txtRespuesta, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE))
+                .addComponent(txtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -182,8 +187,20 @@ public class Principal extends javax.swing.JFrame {
         
         
         if (cantidad >= 0 && cantidad <=16){
-        
-            control.determinarCantidadEmoji(emoji,cantidad);
+            
+            
+            control.generarMatriz();
+            control.determinarCantidadEmoji(emoji,cantidad, matriz);
+            
+            if(cantEncontrados == cantidad){
+                
+                txtEncontrados.setText(String.valueOf(cantEncontrados));
+                txtResultado.setText("ACERTO");
+                
+            }else{
+                txtEncontrados.setText(String.valueOf(cantEncontrados));
+                txtResultado.setText("FALLO");
+            }
             
         }else{
         
@@ -196,9 +213,9 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEstrellaActionPerformed
 
-    private void txtRespuestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRespuestaActionPerformed
+    private void txtResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtResultadoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtRespuestaActionPerformed
+    }//GEN-LAST:event_txtResultadoActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
         // TODO add your handling code here:
@@ -218,8 +235,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtCantidad;
+    private javax.swing.JTextField txtEncontrados;
     private javax.swing.JTextArea txtLugarMatriz;
-    private javax.swing.JTextField txtRespuesta;
-    private javax.swing.JTextField txtVecesAparecidos;
+    private javax.swing.JTextField txtResultado;
     // End of variables declaration//GEN-END:variables
 }

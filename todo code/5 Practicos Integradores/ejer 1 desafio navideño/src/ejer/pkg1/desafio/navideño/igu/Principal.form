@@ -75,13 +75,13 @@
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jScrollPane1" pref="497" max="32767" attributes="0"/>
-                      <Component id="txtRespuesta" max="32767" attributes="0"/>
+                      <Component id="txtResultado" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLabel3" max="32767" attributes="0"/>
-                          <Component id="txtVecesAparecidos" max="32767" attributes="0"/>
+                          <Component id="txtEncontrados" max="32767" attributes="0"/>
                       </Group>
                       <Component id="btnReiniciar" alignment="0" min="-2" pref="143" max="-2" attributes="0"/>
                   </Group>
@@ -98,11 +98,13 @@
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="txtCantidad" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnSanta" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnEstrella" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnRegalo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnArbol" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnSanta" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnRegalo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -110,13 +112,13 @@
                       <Group type="102" attributes="0">
                           <Component id="jLabel3" min="-2" pref="34" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtVecesAparecidos" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEncontrados" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="btnReiniciar" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="txtRespuesta" pref="41" max="32767" attributes="0"/>
+                  <Component id="txtResultado" pref="41" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -196,12 +198,12 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JTextField" name="txtRespuesta">
+        <Component class="javax.swing.JTextField" name="txtResultado">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtRespuestaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtResultadoActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
@@ -209,7 +211,7 @@
             <Property name="text" type="java.lang.String" value="Veces en lo que aparecio: "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtVecesAparecidos">
+        <Component class="javax.swing.JTextField" name="txtEncontrados">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
           </Properties>
