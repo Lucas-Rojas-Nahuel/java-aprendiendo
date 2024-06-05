@@ -181,6 +181,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCantidadActionPerformed
 
     private void btnSantaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSantaActionPerformed
+        
         String emoji="santa";
         int cantidad= Integer.parseInt(txtCantidad.getText());
         
@@ -192,13 +193,15 @@ public class Principal extends javax.swing.JFrame {
             control.generarMatriz();
             control.determinarCantidadEmoji(emoji,cantidad, matriz);
             
+            txtEncontrados.setText(String.valueOf(cantEncontrados));
+            
             if(cantEncontrados == cantidad){
                 
-                txtEncontrados.setText(String.valueOf(cantEncontrados));
+                
                 txtResultado.setText("ACERTO");
                 
             }else{
-                txtEncontrados.setText(String.valueOf(cantEncontrados));
+                
                 txtResultado.setText("FALLO");
             }
             
