@@ -4,6 +4,8 @@ package claabtractas;
 
 public class Circulo implements Figura, Dibujable, Rotable{
 
+    private double radio;
+    
     public Circulo() {
     }
 
