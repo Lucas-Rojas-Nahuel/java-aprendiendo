@@ -1,0 +1,74 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>405</y><w>261</w><h>189</h></coordinates><panel_attributes>Comprobante
+-
+- char tipo
+- int numero 
+- date Fecha
+-
++ Comprobante()
++ Comprobante(char tipo, int numero, date fecha)
++ char getTipo()
++ void setTipo(char val)
++ int getNumero()
++ void setNumero(int val)
++ date getFecha()
++ void setFecha(date val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>72</x><y>99</y><w>171</w><h>180</h></coordinates><panel_attributes>Fecha
+-
+- int dia 
+- itn mes
+- int anio
+-
++Fecha()
++Fecha(int dia, int mes, int anio)
++ int getDia()
++ void setDia(int val)
++ int getMes()
++ void setMes(int val)
++ int getAnio()
++ void setAnio(int val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>585</x><y>90</y><w>189</w><h>144</h></coordinates><panel_attributes>Cliente
+-
+- int codigo
+- string razonSocial
+-
++ Cliente()
++ Cliente(int codigo, string razonSocial)
++ int getCodigo()
++ void setCodigo(int val)
++ string getRazonSocial()
++ void setRazonSocial(string val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>63</y><w>288</w><h>180</h></coordinates><panel_attributes>Producto
+-
+- int codigo
+- string descripcion 
+-  float precio
+-
++ Producto()
++ Producto(int codigo, string descripcion, float precio)
++ int getCodigo()
++ void setCodigo(int val)
++ string getDescripcion()
++ void setDescripcion(string val)
++ float getPrecio()
++ void setPrecio(float val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>387</x><y>351</y><w>342</w><h>171</h></coordinates><panel_attributes>Factura
+-
+- float total
+- Cliente cliente
+- ArraList&lt;Producto&gt; producto
+-
++ Factura()
++ Factura(float total, Cliente cliente, ArrayList&lt;Producto&gt; producto)
++ float getTotal()
++ void setTotal(float val)
++ Cliente getCliente()
++ void setCliente(Cliente val)
++ ArrayList&lt;Producto&gt; getProducto()
+ 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>423</y><w>153</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>225</y><w>63</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 1..*
+- cliente</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>234</y><w>81</w><h>135</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 1..*
+- producto
+</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>270</y><w>63</w><h>153</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 1
+- fecha</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>693</x><y>225</y><w>72</w><h>144</h></coordinates><panel_attributes>lt=-
+m1=1.. *
+m2=1.. *
+- cliente </panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element></diagram>
