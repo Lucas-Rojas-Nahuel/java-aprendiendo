@@ -1,25 +1,32 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>40</x><y>540</y><w>160</w><h>130</h></coordinates><panel_attributes>/Pokemons/
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>40</x><y>214</y><w>160</w><h>160</h></coordinates><panel_attributes>/Pokemons/
 -
-- int numPokedex
-- String nombrePokemon
-- Double peso
-- int temporada
+# int numPokedex
+# String nombrePokemon
+# Double peso
+# String sexo
+# int temporada
 -
-getters y setters</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>30</x><y>90</y><w>50</w><h>180</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;30;160</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>10</x><y>0</y><w>120</w><h>100</h></coordinates><panel_attributes>Eléctrico
+# abstract atacarPlacaje
+# abstract atacarArañazo
+# abstract atacarMordisco
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>474</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>150;10;10;10</additional_attributes></element><element><id>UMLInterface</id><coordinates><x>680</x><y>464</y><w>120</w><h>100</h></coordinates><panel_attributes>Eléctrico
 --
 
-+ AtaqueElectrico</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>150</x><y>10</y><w>100</w><h>100</h></coordinates><panel_attributes>Planta
++ AtaqueElectrico</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>690</x><y>344</y><w>100</w><h>100</h></coordinates><panel_attributes>Planta
 --
 
-+ AtaquePlanta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>280</x><y>70</y><w>100</w><h>100</h></coordinates><panel_attributes>Fuego
++ AtaquePlanta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>680</x><y>104</y><w>100</w><h>100</h></coordinates><panel_attributes>Fuego
 --
 
-+ AtaqueFuego</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>270</x><y>230</y><w>100</w><h>100</h></coordinates><panel_attributes>Agua
++ AtaqueFuego</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>680</x><y>224</y><w>100</w><h>100</h></coordinates><panel_attributes>Agua
 --
 
-+ AtaqueAgua</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>260</y><w>120</w><h>90</h></coordinates><panel_attributes>/Ataques/
--
-- String placaje
-- String Arañazo
-- String Mordisco
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>340</y><w>40</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;20;200</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>90</y><w>100</w><h>190</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>80;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>120</y><w>150</w><h>160</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>130;10;10;140</additional_attributes></element></diagram>
++ AtaqueAgua</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>354</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>140;20;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>264</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>154</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>150;10;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>554</y><w>260</w><h>120</h></coordinates><panel_attributes>main
+--
+Squirtle squirtle
+Chamander charmander
+Bulbasaur bulba
+Pikachu pika
+--
+mostrar en pantalla las interacciones </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>364</y><w>30</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;190;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>154</y><w>100</w><h>40</h></coordinates><panel_attributes>Charmander
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>254</y><w>100</w><h>30</h></coordinates><panel_attributes>Squirtle</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>344</y><w>100</w><h>30</h></coordinates><panel_attributes> Bulbasaur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>474</y><w>100</w><h>50</h></coordinates><panel_attributes>Pikachu</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>154</y><w>270</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;70;250;10</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>234</y><w>280</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;260;30</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>264</y><w>290</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;270;90</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>294</y><w>280</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;260;190</additional_attributes></element></diagram>
