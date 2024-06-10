@@ -18,7 +18,7 @@ public class EjercicioIntegrador {
         squir.ataquePistolaAgua();
         pika.atacarPlacaje();
         pika.ataqueImpactrueno();
-    
+        
     }
     
 }

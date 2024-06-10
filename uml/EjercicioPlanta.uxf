@@ -1,0 +1,38 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>110</x><y>58</y><w>210</w><h>140</h></coordinates><panel_attributes>Planta
+-
+- String nombre
+- double altoDeTallo
+- boolean tieneHojas
+- double climaIdeal
+-
++contructor
++ getter y setter
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>10</x><y>278</y><w>160</w><h>140</h></coordinates><panel_attributes>Arbusto
+-
+- double ancho
+- boolean esDomestico
+- String variedadArbusto
+- String tipoDeHojas
+- boolean sePodaONo
+-
++ "Hola soy un arbusto"
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>278</y><w>170</w><h>140</h></coordinates><panel_attributes>Flor
+-
+- String colorDePetalo
+- int cantidadPromDePetalo
+- string colorDelPistillo
+- String colorDePetalos
+- String variedadDeFlor
+- String estacionQueFlorece
+-
++ "Hola soy una flor"
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>278</y><w>150</w><h>140</h></coordinates><panel_attributes>Arbol
+-
+- String variedad
+- String tipoDeTronco
+- double radio de tronco
+- String color
+- String tipoDeHojas
+-
++ "Hola soy un arbol"
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>188</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>30;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>188</y><w>40</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>188</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;90</additional_attributes></element></diagram>
