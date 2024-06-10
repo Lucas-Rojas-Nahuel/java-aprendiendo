@@ -1,29 +1,20 @@
  
 package operador.de.autos;
 
-import Automovil.Automovil;
-import java.util.Scanner;
+ 
+
 
  
 public class OperadorDeAutos {
 
      
     public static void main(String[] args) {
-        Scanner teclado= new Scanner(System.in);
         
-        System.out.print("Ingresar marca del vehiculo: ");
-        String marca=teclado.nextLine();
-        
-        System.out.print("Ingresar modelo del vehiculo: ");
-        String modelo=teclado.nextLine();
-        
-        System.out.print("Ingresar año de fabricacion: ");
-        int anioFabricacion=teclado.nextInt();
         
         Automovil auto=new Automovil();
-        auto.setMarca(marca);
-        auto.setModelo(modelo);
-        auto.setAnioFabricacion(anioFabricacion);
+        auto.setMarca("Peugeot");
+        auto.setModelo("508");
+        auto.setAnioFabricacion(2018);
         
         
         

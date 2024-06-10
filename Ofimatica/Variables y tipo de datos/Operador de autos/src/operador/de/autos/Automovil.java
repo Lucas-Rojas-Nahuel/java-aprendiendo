@@ -1,5 +1,5 @@
  
-package Automovil;
+package operador.de.autos;
 
  
 public class Automovil {
@@ -7,8 +7,7 @@ public class Automovil {
     private String modelo;
     private int anioFabricacion;
 
-    public Automovil() {
-    }
+    
 
     public String getMarca() {
         return marca;
@@ -33,9 +32,4 @@ public class Automovil {
     public void setAnioFabricacion(int anioFabricacion) {
         this.anioFabricacion = anioFabricacion;
     }
-    
-    
-    
-    
-    
 }

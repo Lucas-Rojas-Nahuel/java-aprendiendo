@@ -2,7 +2,7 @@
 package declararvariable;
 
 import java.util.Scanner;
-import Sujeto.Sujeto;
+
 
 public class declararVariable {
 
@@ -16,7 +16,7 @@ public class declararVariable {
         System.out.print("Ingresar edad: ");
         int edad=teclado.nextInt();
         
-        System.out.print("Ingresar altura");
+        System.out.print("Ingresar altura: ");
         Float altura=teclado.nextFloat();
         
         Sujeto datos=new Sujeto(nombre, edad, altura);
