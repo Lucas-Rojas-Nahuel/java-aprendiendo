@@ -14,10 +14,13 @@ public class Universidad {
     }
 
     //Creo un Constructor con parametros
-    public Universidad(String nombre, int cue) {
+
+    public Universidad(String nombre, int cue, String provinciaRadicacion) {
         this.nombre = nombre;
         this.cue = cue;
+        this.provinciaRadicacion = provinciaRadicacion;
     }
+    
 
     //Sus correspondientes getters y setters
     public String getNombre() {

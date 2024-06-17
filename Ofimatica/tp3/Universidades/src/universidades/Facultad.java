@@ -1,6 +1,8 @@
 
 package universidades;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -13,9 +15,20 @@ public class Facultad extends Universidad {
     private Date fechaCreacion;
 
     //Creo un Constructor con parametros
-    public Facultad(String denomicacion) {
+
+    public Facultad(String denomicacion, int matricula, int cantidadCarreras, String fechaCreacion) {
+        
         this.denomicacion = denomicacion;
+        this.matricula = matricula;
+        this.cantidadCarreras = cantidadCarreras;
+         
+        try{
+            this.fechaCreacion = new SimpleDateFormat("dd/MM/yyyy").parse(fechaCreacion); 
+        }catch(ParseException e){
+            e.printStackTrace();
+        }
     }
+    
 
     //Sus correspondientes getters y setters
     public String getDenomicacion() {
@@ -49,6 +62,8 @@ public class Facultad extends Universidad {
     public void setFechaCreacion(Date fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
     }
+
+    
     
     
 }

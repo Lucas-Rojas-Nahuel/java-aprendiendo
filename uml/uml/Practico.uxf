@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>207</y><w>243</w><h>369</h></coordinates><panel_attributes>Libro
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>251</y><w>243</w><h>369</h></coordinates><panel_attributes>Libro
 --
 - String isbn
 - String titulo 
@@ -25,7 +25,7 @@
 + void prestar( )
 + void devolver( )
 + void reservar( )
-+ void mostrarInformacion( )</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>603</x><y>0</y><w>216</w><h>198</h></coordinates><panel_attributes>Persona
++ void mostrarInformacion( )</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>603</x><y>44</y><w>216</w><h>198</h></coordinates><panel_attributes>Persona
 --
 - String nombre
 - String apellido
@@ -39,13 +39,13 @@
 + void setNacionalidad( String val )
 + String getNacionalidad( )
 + void setFechaNacimiento( Date val )
-+ Date getFechaNacimiento( )</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>531</x><y>360</y><w>189</w><h>90</h></coordinates><panel_attributes>Autor
++ Date getFechaNacimiento( )</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>522</x><y>404</y><w>198</w><h>90</h></coordinates><panel_attributes>Autor
 --
 - String categoria
 --
 + void setCategoria( String val )
 + String getCategoria( )
-+ void mostrarInformacion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>522</x><y>225</y><w>198</w><h>117</h></coordinates><panel_attributes>Usuario
++ void mostrarInformacion()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>522</x><y>269</y><w>198</w><h>117</h></coordinates><panel_attributes>Usuario
 --
 - int nroSocio
 - Date fechaRegistro 
@@ -53,7 +53,7 @@
 --
 + void registrarPrestamo( Libro val )
 + void registrarDevolucion( Libro val )
-+ void mostrarInformacion( ) </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>0</y><w>360</w><h>126</h></coordinates><panel_attributes>SistemaBiblioteca
++ void mostrarInformacion( ) </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>44</y><w>360</w><h>126</h></coordinates><panel_attributes>SistemaBiblioteca
 --
 - ArrayList&lt;Libro&gt; catalogoLibros
 - ArrayList&lt;Usuario&gt; usuariosRegistrados
@@ -62,7 +62,7 @@
 + void buscarLibro( String isbn )
 + void registrarUsuario( Usuario val )
 + void autenticarUsuario( String nombreUsuario, String contraseña )
-+ void mostrarLibrosPrestamos( Usuario val )</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>342</x><y>468</y><w>189</w><h>207</h></coordinates><panel_attributes>Editorial
++ void mostrarLibrosPrestamos( Usuario val )</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>342</x><y>512</y><w>189</w><h>207</h></coordinates><panel_attributes>Editorial
 --
 - String nombre
 - String paginaWeb
@@ -77,18 +77,18 @@
 + String getDireccion( )
 + void setMail( String val )
 + String getMail( )
-+ void mostrarInformacion( )</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>396</y><w>315</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
++ void mostrarInformacion( )</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>440</y><w>306</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m2= 1..*
 pertenece
-</panel_attributes><additional_attributes>10;20;330;20</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>540</y><w>126</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>584</y><w>126</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m2= 1..1
-pertenece</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>279</y><w>306</w><h>45</h></coordinates><panel_attributes>lt=-
+pertenece</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>323</y><w>306</w><h>45</h></coordinates><panel_attributes>lt=-
 m1=0..*
 m2=1..1
-libros prestados</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>117</y><w>162</w><h>162</h></coordinates><panel_attributes>lt=-
+libros prestados</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Relation</id><coordinates><x>234</x><y>161</y><w>162</w><h>162</h></coordinates><panel_attributes>lt=-
 m1=1..*
 m2=1
-tiene</panel_attributes><additional_attributes>10;150;130;150;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>405</x><y>117</y><w>135</w><h>180</h></coordinates><panel_attributes>lt=-
+tiene</panel_attributes><additional_attributes>10;150;130;150;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>405</x><y>161</y><w>135</w><h>180</h></coordinates><panel_attributes>lt=-
 m1=0..*
 m2=1
 
@@ -96,4 +96,4 @@ m2=1
  registrados
 
 
-   </panel_attributes><additional_attributes>130;150;10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>189</y><w>117</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;110;280;10;280</additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>189</y><w>99</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;90;140;10;140</additional_attributes></element></diagram>
+   </panel_attributes><additional_attributes>130;150;10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>233</y><w>117</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;110;280;10;280</additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>233</y><w>99</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;90;140;10;140</additional_attributes></element></diagram>

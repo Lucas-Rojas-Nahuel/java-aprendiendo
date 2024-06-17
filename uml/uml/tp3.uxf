@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>405</y><w>261</w><h>189</h></coordinates><panel_attributes>Comprobante
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>376</y><w>232</w><h>168</h></coordinates><panel_attributes>Comprobante
 -
 - char tipo
 - int numero 
@@ -11,7 +11,7 @@
 + int getNumero()
 + void setNumero(int val)
 + date getFecha()
-+ void setFecha(date val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>72</x><y>99</y><w>171</w><h>180</h></coordinates><panel_attributes>Fecha
++ void setFecha(date val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>64</x><y>104</y><w>152</w><h>160</h></coordinates><panel_attributes>Fecha
 -
 - int dia 
 - itn mes
@@ -24,7 +24,7 @@
 + int getMes()
 + void setMes(int val)
 + int getAnio()
-+ void setAnio(int val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>585</x><y>90</y><w>189</w><h>144</h></coordinates><panel_attributes>Cliente
++ void setAnio(int val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>96</y><w>168</w><h>128</h></coordinates><panel_attributes>Cliente
 -
 - int codigo
 - string razonSocial
@@ -34,7 +34,7 @@
 + int getCodigo()
 + void setCodigo(int val)
 + string getRazonSocial()
-+ void setRazonSocial(string val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>63</y><w>288</w><h>180</h></coordinates><panel_attributes>Producto
++ void setRazonSocial(string val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>72</y><w>256</w><h>160</h></coordinates><panel_attributes>Producto
 -
 - int codigo
 - string descripcion 
@@ -47,7 +47,7 @@
 + string getDescripcion()
 + void setDescripcion(string val)
 + float getPrecio()
-+ void setPrecio(float val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>387</x><y>351</y><w>342</w><h>171</h></coordinates><panel_attributes>Factura
++ void setPrecio(float val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>344</x><y>328</y><w>304</w><h>152</h></coordinates><panel_attributes>Factura
 -
 - float total
 - Cliente cliente
@@ -61,14 +61,14 @@
 + void setCliente(Cliente val)
 + ArrayList&lt;Producto&gt; getProducto()
  
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>423</y><w>153</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>225</y><w>63</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>224</x><y>392</y><w>136</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>216</y><w>56</w><h>128</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2= 1..*
-- cliente</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>234</y><w>81</w><h>135</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+- cliente</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>224</y><w>72</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2= 1..*
 - producto
-</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>270</y><w>63</w><h>153</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>112</x><y>256</y><w>56</w><h>136</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2= 1
-- fecha</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>693</x><y>225</y><w>72</w><h>144</h></coordinates><panel_attributes>lt=-
+- fecha</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>616</x><y>216</y><w>64</w><h>128</h></coordinates><panel_attributes>lt=-
 m1=1.. *
 m2=1.. *
 - cliente </panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element></diagram>

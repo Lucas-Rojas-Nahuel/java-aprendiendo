@@ -1,9 +1,9 @@
-<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>120</x><y>176</y><w>184</w><h>48</h></coordinates><panel_attributes>Fabrica
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>176</x><y>160</y><w>184</w><h>48</h></coordinates><panel_attributes>Fabrica
 --
 - arrayList&lt;Sucursal&gt; sucursales
 -
 + arrayList&lt;Surcusales&gt; getSucursales()
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>104</x><y>360</y><w>208</w><h>88</h></coordinates><panel_attributes>Sucursal
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>344</y><w>208</w><h>88</h></coordinates><panel_attributes>Sucursal
 --
 - string nombreSucursal
 - arrayList &lt;Instrumentos&gt; instrumento
@@ -11,7 +11,7 @@
 + string getNombreSurcusal()
 + void setNombreSurcusal(string val)
 + arrayList&lt;Instrumentos&gt; getInstrumento()
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>424</x><y>336</y><w>128</w><h>120</h></coordinates><panel_attributes>Instrumentos
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>320</y><w>128</w><h>120</h></coordinates><panel_attributes>Instrumentos
 -
 - String ID
 - double precio
@@ -21,16 +21,16 @@
 + void setID(string val)
 + double getPrecio()
 + void setPrecio(double val)
-+ Cliente getCliente()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>432</x><y>160</y><w>72</w><h>72</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
++ Cliente getCliente()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>488</x><y>144</y><w>72</w><h>72</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 Tipo
 -
 _+ PERCUSION_
 _+ VIENTO_
 _+ CUERDA_
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>216</y><w>72</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>272</x><y>200</y><w>80</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
-- sucursales</panel_attributes><additional_attributes>10;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>304</x><y>392</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+- sucursales</panel_attributes><additional_attributes>10;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>376</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
-- instrumento</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>224</y><w>48</w><h>128</h></coordinates><panel_attributes>lt=&lt;-
+- instrumento</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>208</y><w>48</w><h>128</h></coordinates><panel_attributes>lt=&lt;-
 m1=1 
 - tipo</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element></diagram>
