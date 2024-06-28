@@ -1,0 +1,35 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>600</x><y>0</y><w>210</w><h>160</h></coordinates><panel_attributes>Persona
+-
+- String nombre
+- Int edad
+-
++ persona()
++ persona(string nombre, int edad)
++ String getNombre()
++ Void setNombre(String val)
++ Int getEdad()
++ void setEdad(int val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>300</y><w>210</w><h>140</h></coordinates><panel_attributes>Profesor
+-
+- String materia 
+- String cargo
+-
++ Profesor()
++ String getMateria()
++ void setMateria(string val)
++ String getCargo()
++ void setCargo(string val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>280</y><w>240</w><h>160</h></coordinates><panel_attributes>Estudiante
+-
+- String carrera
+- Int legajo
+-
++ Estudiante()
++ Estudiante(int legajo, string carrera)
++ String getCarrera()
++ void setCarrera(string val)
++ Int getLegajo()
++ void setLegajo(int val)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>320</y><w>290</w><h>70</h></coordinates><panel_attributes>EstudianteAvanzado
+-
+-
++ EstudianteAvanzado()
++ EstudianteAvanzado(Int legajo, string carrera)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>60</y><w>80</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;10;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>80</y><w>90</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;10;70;220</additional_attributes></element><element><id>Relation</id><coordinates><x>285</x><y>350</y><w>180</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;10;10</additional_attributes></element></diagram>

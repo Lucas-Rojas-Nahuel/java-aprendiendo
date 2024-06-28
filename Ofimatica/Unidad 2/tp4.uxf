@@ -1,0 +1,70 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>Space for diagram notess</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>133</y><w>147</w><h>133</h></coordinates><panel_attributes>Comprobante 
+-
+- char tipo
+- int numero
+- Fecha fecha
+--
++char getTipo()
++void setTipo(char val)
++int getNumero()
++void setNumero (int val)
++Fecha getFecha()
++void setFecha (Fecha val)
++ Comprobante()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>336</y><w>147</w><h>133</h></coordinates><panel_attributes>Fecha
+-
+-int dia
+-int mes
+-int anio
+-
++int getDia()
++void setDia(int val)
++int getMes()
++void setMes (int val)
++int getAnio()
++void setAnio(int val)
++ Fecha()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>0</y><w>147</w><h>133</h></coordinates><panel_attributes>Recibo
+-
+-Proveedor proveedor
+-Float total
+-String detalle
+-
++Proveedor getProveedor()
++void setProveedor(Proveedor val)
++Float getTotal()
++void setTotal(Float val)
++String getDetalle()
++void setDetalle(String val)
++ Recibo() 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>217</y><w>147</w><h>112</h></coordinates><panel_attributes>Proveedor
+-
+-int codigo
+-String razonSocial
+-
+
++int getCodigo()
++void setCodigo(int val)
++String getRazonSocial()
++void setRazonSocial(String val)
++ Proveedor()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>63</x><y>49</y><w>140</w><h>98</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;120;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>126</y><w>42</w><h>98</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+tiene
+m2=1..1</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>420</y><w>147</w><h>133</h></coordinates><panel_attributes>Producto
+-
+- int codigo
+- string descripcion 
+- float precio
+-
++ Producto()
++ int getCodigo()
++ void setCodigo(int val)
++ string getDescripcion()
++ void setDescripcion(string val)
++ float getPrecio()
++ void setPrecio(float val)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>322</y><w>70</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 1 .. *
+mProductos</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>63</x><y>259</y><w>42</w><h>91</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+posee
+m2= 1..1</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element></diagram>
